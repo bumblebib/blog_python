@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Contatos </title>
+        </head>
+
+        <body>
+            <a href="https://www.oceanbrasil.com">Click para ir a Ocean Brasil.</a>
+            <h1>{{nome}}</h1>
+
+            {% if usuario[2] == "Aluna" %}
+                <h2>Bem vinda Aluna!</h2>
+                {{usuario[1]}}
+            {% else %}
+                <h2>Bem vindo Aluno</h2>
+            {% endif %}
+
+            {% for aluno in alunos %}
+            <h3>{{aluno}}</h3>
+            {% endfor %}
+            
+            <h1>Bibi, e-mail</h1>
+            <h2>bibibubu@hotmail.com</h2>
+            <h3>15 555 5555 555</h3>
+        </body>
+    </html>
